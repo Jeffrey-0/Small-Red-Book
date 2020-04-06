@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:id="@+id/main_ll"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小疯子"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+        <ImageView
+            android:id="@+id/IV_set"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/exit"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="5dp"
+            android:layout_height="0.5dp"
+            android:background="#2f2f2f5f"
+            />
+
+        <ImageView
+            android:id="@+id/main_icon"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/tv_user_name"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/img1"/>
+
+        <TextView
+            android:id="@+id/TV_edit"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/main_icon"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/main_icon"
+            android:background="@drawable/search_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="编辑资料"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/TV_editpwd"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/TV_edit"
+            android:layout_toRightOf="@+id/main_icon"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/search_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/editpwd"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/TV_share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TV_editpwd"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="183dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/search_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="分享瞬间"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tv_user_name"
+        android:layout_height="0.5dp"
+        android:background="#2f2f2f5f"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TL_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabTextAppearance="@style/TabLayoutTextStyle">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/VP_content_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

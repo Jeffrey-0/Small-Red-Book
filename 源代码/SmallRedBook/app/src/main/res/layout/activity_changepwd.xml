@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="5dp"
+        />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="#2f2f2f" />
+    <EditText
+
+        android:id="@+id/et_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="100dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/register_hint_text_color"
+        android:padding="20dp"
+        android:hint="@string/oldpwd"/>
+
+    <EditText
+        android:id="@+id/et_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginBottom="20dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/register_hint_text_color"
+        android:padding="20dp"
+        android:hint="@string/newpwd"/>
+
+    <EditText
+        android:id="@+id/et_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_marginBottom="30dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/register_hint_text_color"
+        android:padding="20dp"
+        android:hint="@string/newpwd1"/>
+
+    <Button
+        android:id="@+id/btn_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/surepwd"
+        android:textSize="20sp"
+        android:background="#4CAF50"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"/>
+    <Button
+
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2f2f2f2f"
+        android:padding="0dp"
+        android:textSize="20sp"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
+
